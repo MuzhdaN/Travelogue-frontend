@@ -3,11 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from "../assets/logo.png"
+import styles from "../styles/NavBar.module.css"
 
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className={styles.NavBar} bg="light" expand="lg">
     <Container>
       <Navbar.Brand href="#home" className="d-flex align-items-center">
         <img src={logo} alt="logo" height="50" className="me-2" />
